@@ -28,7 +28,7 @@ public class StudentServiceImplementation implements StudentService {
 		return "Saved Successfully ";
 	}
 
-	public String deleteStudent(int id) {
+	public String deleteStudent(Long id) {
 		Student s = studentRepository.findById(id).orElse(null);
 		if (s == null) {
 			return "No such Student exists ";

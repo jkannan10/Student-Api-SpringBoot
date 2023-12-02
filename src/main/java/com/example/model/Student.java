@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private Long id;
 
 	@Column(name = "name", length = 20)
 	private String name;
@@ -30,7 +30,7 @@ public class Student {
 	private long mobileNumber;
 
 	@ManyToOne
-	@JoinColumn(name = "courseid")
+	@JoinColumn(name = "courseId")
 	private Course course;
 
 }

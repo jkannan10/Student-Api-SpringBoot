@@ -29,7 +29,7 @@ public class CourseServiceImplementation implements CourseService {
 		}
 		return "Course Added Succesfully ";
 	}
-	public String deleteCourse(int id) {
+	public String deleteCourse(Long id) {
 		Course c = courseRepository.findById(id).orElse(null);
 		if(c == null) {
 			return "No course Found ";

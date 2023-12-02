@@ -40,7 +40,7 @@ public class StudentController {
     }
 
     @DeleteMapping("delete")
-    public String deleteStudentDetails(@RequestBody int id) {
+    public String deleteStudentDetails(@RequestBody Long id) {
         return studentService.deleteStudent(id);
     }
 

@@ -2,11 +2,7 @@ package com.example.model;
 
 import java.util.List;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -14,7 +10,8 @@ import lombok.Data;
 @Data
 public class Course {
 	@Id
-	private int courseId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long courseId;
 	
 	@Column(name = "course_name", length = 20)
 	private String courseName;

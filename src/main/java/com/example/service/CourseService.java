@@ -11,7 +11,7 @@ public interface CourseService {
 
 	String saveCourse(Course course);
 
-	String deleteCourse(int id);
+	String deleteCourse(Long id);
 
 	String updateCourse(Course course);
 }

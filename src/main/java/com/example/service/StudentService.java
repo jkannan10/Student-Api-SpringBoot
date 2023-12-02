@@ -12,7 +12,7 @@ public interface StudentService {
 
 	String saveStudent(Student student);
 
-	String deleteStudent(int id);
+	String deleteStudent(Long id);
 
 	String updateStudent(Student student);
 
